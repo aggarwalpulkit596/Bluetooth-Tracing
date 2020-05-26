@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="@dimen/horizontal_margin"
+  android:background="#EDFBF9F9"
+  tools:context=".MainActivity">
+
+  <Switch
+    android:id="@+id/btSwitch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/bluetooth"
+    android:padding="@dimen/vertical_margin"
+    android:background="#ffffff"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:checked="false"
+    />
+
+  <TextView
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btSwitch"
+    android:padding="@dimen/vertical_margin"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:text="@string/welcome_message"/>
+
+  <TextView
+    android:id="@+id/availableText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/header"
+    android:padding="@dimen/vertical_margin"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+    android:text="Available Devices"/>
+
+
+  <ListView
+    android:id="@+id/availableListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/availableText"
+    android:layout_marginTop="@dimen/horizontal_margin"/>
+</RelativeLayout>
